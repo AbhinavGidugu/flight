@@ -1,0 +1,59 @@
+{% extends 'struc.html' %}
+
+{% block contents %}
+
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.airline.label }}
+        {{ form.airline }}
+    </div><br>
+    <div>
+        {{ form.Source.label }}
+        {{ form.Source }}
+    </div><br>
+    <div>
+        {{ form.departure.label }}
+        {{ form.departure }}
+    </div><br>
+    <div>
+        {{ form.stops.label }}
+        {{ form.stops }}
+    </div><br>
+    <div>
+        {{ form.arrival.label }}
+        {{ form.arrival }}
+    </div><br>
+    <div>
+        {{ form.destination.label }}
+        {{ form.destination }}
+    </div><br>
+    <div>
+        {{ form.coach.label }}
+        {{ form.coach }}
+    </div><br>
+    <div>
+        {{ form.duration.label }}
+        {{ form.duration }}
+    </div><br>
+    <div>
+        {{ form.daysLeft.label }}
+        {{ form.daysLeft }}
+    </div><br>
+    <div class="message">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+            
+        {% endif %}
+        {% endwith %}
+    </div>
+    <div>
+        {{form.submit}}
+    </div>
+
+</form>
+
+{% endblock %}

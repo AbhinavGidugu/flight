@@ -1,0 +1,80 @@
+body{
+    background-image: url("../images/plane6.webp ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    background: tr;
+
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the color and opacity as needed */
+    background-blend-mode: overlay; /* Blends the color with the image */
+
+    margin:0;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: right;  
+} 
+.main {
+    margin-left: 270px;
+    text-align: right; /* Optional: centers text inside the div */
+    height: 100vh;
+    width: 80%;         /* Optional: control the width of the div */
+    max-width: 600px;   /* Centers text inside the div */
+}
+label{
+    font-family:"Helvetica";
+    font-weight: bolder;
+    font-size: 18px;
+    color: #02172c  ;
+}
+select{
+    font-family:"Helvetica";
+    color: #000000;
+    background: transparent;
+    border-style: double;
+    border-color: #000000;
+    border-width: 2px;
+    
+    border-radius: 5px;
+    font-size: 15px;
+}
+input[type="submit"]{
+    font-size: 15px;
+    font-family:"Helvetica";
+    color: #000000;
+    padding: 10px 20px;
+    border-style: double;
+    border-color: #000000;
+    font-weight: bolder;
+}
+input{
+    background: transparent;
+    font-family:"Helvetica";
+    color: #000000;
+    border-style: double;
+    border-color: #000000;
+    font-size: 15px;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    color: rgb(0, 0, 0);
+}
+.message{
+    font-family:"Helvetica";
+    font-weight: bolder;
+    font-size: 18px;
+}
+p{
+    font-family:"Helvetica";
+    color:#02172c;
+    font-size: 22px;
+}
